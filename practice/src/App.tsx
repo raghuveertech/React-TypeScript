@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Header from "./components/Header";
 import HeaderParent from "./components/HeaderParent";
@@ -40,6 +41,7 @@ function App() {
       <HeaderParent>
         <Header>Welcome to my website</Header>
       </HeaderParent>
+      <Button handleClick={() => console.log("Clicked")} />
     </div>
   );
 }
