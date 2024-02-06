@@ -1,6 +1,7 @@
 import "./App.css";
 import Greet from "./components/Greet";
 import Header from "./components/Header";
+import HeaderParent from "./components/HeaderParent";
 import Name from "./components/Name";
 import Persons from "./components/Persons";
 import Status from "./components/Status";
@@ -35,6 +36,9 @@ function App() {
       <Status status="error" />
       <Status status="success" /> */}
       <Header>Welcome to my website</Header>
+      <HeaderParent>
+        <Header>Welcome to my website</Header>
+      </HeaderParent>
     </div>
   );
 }
