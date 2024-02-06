@@ -29,8 +29,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Greet name={"Raghuveer"} messageCount={20} isLoggedIn={true} />
-      <Name name={name} />
+      <Greet name={"Raghuveer"} messageCount={20} isLoggedIn={true} />
+      <Greet name={"Raghuveer"} isLoggedIn={true} />
+      {/*<Name name={name} />
       <Persons persons={persons} />
       <Status status="loading" />
       <Status status="error" />
