@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Header from "./components/Header";
 import HeaderParent from "./components/HeaderParent";
+import Input from "./components/Input";
 import Name from "./components/Name";
 import Persons from "./components/Persons";
 import Status from "./components/Status";
@@ -41,7 +42,8 @@ function App() {
       <HeaderParent>
         <Header>Welcome to my website</Header>
       </HeaderParent>
-      <Button handleClick={() => console.log("Clicked")} />
+      <Button handleClick={(e) => console.log("Clicked" + e.target)} />
+      <Input value="Test" handleChange={(e) => console.log("input event", e)} />
     </div>
   );
 }
