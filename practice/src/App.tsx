@@ -7,6 +7,7 @@ import Input from "./components/Input";
 import Name from "./components/Name";
 import Persons from "./components/Persons";
 import Status from "./components/Status";
+import StyledContainer from "./components/StyledContainer";
 
 function App() {
   const name = {
@@ -44,6 +45,14 @@ function App() {
       </HeaderParent>
       <Button handleClick={(e) => console.log("Clicked" + e.target)} />
       <Input value="Test" handleChange={(e) => console.log("input event", e)} />
+      <StyledContainer
+        styles={{
+          backgroundColor: "red",
+          border: "1px solid #000",
+          margin: "10px",
+          padding: "10px",
+        }}
+      />
     </div>
   );
 }
